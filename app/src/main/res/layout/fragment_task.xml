@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="4dp"
+    android:layout_marginTop="4dp"
+    android:background="@drawable/ic_round_square_48"
+    android:backgroundTint="@color/color2">
+
+    <ImageButton
+        android:id="@+id/fragment_task_image_button_complete_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/ic_round_square_48"
+        android:backgroundTint="@color/color2"
+        android:contentDescription="@string/fragment_task_image_button_complete_task_content_description"
+        android:padding="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_outline_done_48"
+        app:tint="@color/color4" />
+
+
+    <TextView
+        android:id="@+id/fragment_task_text_view_task_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/allerta"
+        android:foregroundTint="@color/color6"
+        android:textColor="@color/color6"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/fragment_task_image_view_task_status"
+        app:layout_constraintStart_toEndOf="@+id/fragment_task_image_button_complete_task"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Do the dishes" />
+
+    <TextView
+        android:id="@+id/fragment_task_text_view_task_deadline"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/allerta"
+        android:textColor="@color/color7"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/fragment_task_image_view_task_status"
+        app:layout_constraintStart_toEndOf="@+id/fragment_task_image_button_complete_task"
+        tools:text="05.07.2003" />
+
+    <ImageView
+        android:id="@+id/fragment_task_image_view_task_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="4dp"
+        android:contentDescription="@string/fragment_task_image_view_task_status_content_description"
+        android:padding="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/fragment_task_image_button_edit_task"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_outline_warning_amber_48" />
+
+    <ImageButton
+        android:id="@+id/fragment_task_image_button_edit_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/ic_round_square_48"
+        android:backgroundTint="@color/color2"
+        android:contentDescription="@string/fragment_task_image_button_edit_task_content_description"
+        android:padding="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_outline_edit_48"
+        app:tint="@color/color7" />
+</androidx.constraintlayout.widget.ConstraintLayout>

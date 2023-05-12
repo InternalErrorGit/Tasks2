@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="fragment_task_image_button_complete_task_content_description">fragment_task_image_button_complete_task_content_description</string>
+    <string name="fragment_task_image_button_edit_task_content_description">fragment_task_image_button_edit_task_content_description</string>
+    <string name="fragment_task_image_view_task_status_content_description">fragment_task_image_view_task_status_content_description</string>
+</resources>
